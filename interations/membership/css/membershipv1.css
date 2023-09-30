@@ -1,0 +1,116 @@
+
+body {
+    background-color: #F7FFFE;
+}
+
+h1 {
+    font-size: 125px;
+}
+
+#page {
+    width: 95%;
+}
+
+/* Navigation bar */
+
+.navbar-nav {
+    font-size: 20px;
+}
+
+/* About banner */
+
+#about {
+    background: #8BAFCE;
+    width: 94%; 
+    margin: 50px auto 0;
+    height: 851px;
+}
+
+#banner {
+    background: url(../../../images/membership_banner.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin: 91px auto 0;
+    padding: 0;
+    height: 440px;
+}
+
+#banner_overlay{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+}
+
+#banner_overlay h1{
+    color: white;
+    text-align: center;
+    padding: 115px;
+}
+
+
+#about_blurb{
+    margin: 75px auto 0;
+}
+
+#about_blurb p{
+    margin: 0 auto 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+#member_ship_options {
+    background-color: #DAEDFF;
+    padding: 0;
+}
+
+#member_ship_options div {
+    margin: 0 5px;
+    padding: 0;
+}
+
+#member_ship_options div div{
+    background-color: #F7FFFE;
+    height: 100%;
+}
+
+#member_ship_options div div div{
+    background-color: #F7FFFE;
+    display: inline-block;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#member_ship_options img {
+    margin: 0 auto;
+}
+
+#member_ship_options h3 {
+    color: #5AA0D3;
+    font-weight: bold;
+    display: block;
+}
+
+#member_ship_options h4 {
+    color: #5AA0D3;
+    font-weight: bold;
+    display: inline;
+}
+
+#member_ship_options a{
+    display: inline-block;
+    padding: 5px 50px;
+    background: #FEB0D7;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    border-radius: 15px;
+    margin: 0 auto 15px;
+}
+
+#member_ship_options a:hover{
+    background: #5AA0D3;
+}

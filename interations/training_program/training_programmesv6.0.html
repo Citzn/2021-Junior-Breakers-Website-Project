@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://use.typekit.net/tyi6brx.css">
+
+<link rel="stylesheet" href="css/training_programmesv6.0.css">
+<style>
+    [data-adobe-font="blockhead OT"] {
+        font-family: blockhead-black-face,
+        sans-serif; font-weight: 400;
+        font-style: normal;
+    }
+
+</style>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        var order = [];
+    $("[data-link]").hover(
+    function() {
+        if ($(this).attr("data-link") == "training programmes"){
+            $(this).html("<b>You are here</b>"); 
+    }
+        $(this).css({color : '#FEB0D7'});
+    },
+    function() {
+        $(this).html("<b>" + $(this).attr("data-link").charAt(0).toUpperCase() + $(this).attr("data-link").slice(1) + "</b>");
+        $(this).css({color : '#51606e'});
+    })
+
+    // When traiing programmes section animation
+    $("#option_button_containers li").hover(
+    // When user hovers over one of the listed elements
+    function() {
+        // If the listed element's corrisponding number (data-num-id) was 0 then
+        var temp = parseInt($(this).attr("data-num-id"))
+        if (temp == 0) {
+            // set the list order to 0, 1, 2
+            order = [0, 1, 2]
+        }
+        // Else if the listed element's corrisponding number (data-num-id) was 1 then
+        else if (temp == 1) {
+            // set the list order to 1, 2, 0
+            order = [1, 2, 0]
+        }
+        // Else the likely listed corrisponding number (data-num-id) is 2 then
+        else {
+            // set the list order to 2, 0, 1
+            order = [2, 0, 1]
+        }
+        // for the length of the array depending on the order of the numbers inside css nth:child(array[index]) like so
+        var i;
+        for (i = 0; i < order.length;) {
+            // move the .training_card:nth-child on different lays and positions depending on order of the array
+            $(".training_card:nth-child" + "(" + (order[i] + 1) + ")").animate({
+                marginLeft : (String(5 * (3 - i)) + "%"),
+                marginTop : (String(5 * (3 - i)) + "%"),
+                zIndex : String(3 - i)}
+                , 0.01 // animation duration 0.01 seconds
+            );
+            
+            // If the array's index is 0 then the number stored within the index's corrisponding .training_card:nth-child() will be the image on top and will have it's dscription revealed
+            if (i == 0) {
+                $(".training_card:nth-child" + "(" + (order[i] + 1) + ")").css({
+                    filter : "blur(0px)",
+                }, 0.01 // animation duration 0.01 seconds
+                );
+                $(".training_card:nth-child" + "(" + (order[i] + 1) + ")").children().last().animate({
+                    marginTop : "67.5%",
+                }, 0.01 // animation duration 0.01 seconds
+                );
+                $(".training_card:nth-child" + "(" + (order[i] + 1) + ")").find("img").css({
+                    filter : "blur(0px)",
+                    boxShadow : "none"
+                }, 0.01 // animation duration 0.01 seconds
+                );
+            } else {
+                // If the array's index is not 0 then the number stored within the index's corrisponding .training_card:nth-child()
+                // will be the image move behind depending on order and will hide it's description behind their image
+                $(".training_card:nth-child" + "(" + (order[i] + 1) + ")").css({
+                    filter : "blur(4px)",
+                }, 0.01 // animation duration 0.01 seconds
+                );
+                $(".training_card:nth-child" + "(" + (order[i] + 1) + ")").children().last().animate({
+                    marginTop : "0px",
+                }, 0.01 // animation duration 0.01 seconds
+                );
+            }
+            i++
+        }
+    },
+    // When user hovers off
+    function() {
+        // reset back to default order
+        order = [0, 1, 2]
+        var i;
+        // for the length of the array depending on the order of the numbers inside css nth:child(array[index]) like so
+        for (i = 0; i < order.length;) {
+            // move the .training_card:nth-child on different lays and positions depending on order of the array depending on the default order
+                $(".training_card:nth-child" + "(" + (order[i] + 1) + ")").animate({
+                marginLeft : (String(5 * (3 - i)) + "%"),
+                marginTop : (String(5 * (3 - i)) + "%"),
+                zIndex : String(3 - i),
+            }, 0.01 // animation duration 0.01 seconds
+            );
+            $(".training_card:nth-child" + "(" + (order[i] + 1) + ")").find("img").css({
+                    boxShadow : "0px 0px 50px #000000"
+                }, 0.01 // animation duration 0.01 seconds
+            );
+            // all images hide their descriptions
+            $(".training_card:nth-child" + "(" + (order[i] + 1) + ")").children().last().animate({
+                marginTop : "0px",
+            }, 0.01 // animation duration 0.01 seconds
+            );
+            // If the index is 0 then .training_card:nth-child(1) will be on the top layer 
+            if (i == 0) {
+                $(".training_card:nth-child" + "(" + (order[i] + 1) + ")").css({
+                    filter : "blur(0px)",
+                }, 0.01 // animation duration 0.01 seconds
+                );
+                $(".training_card:nth-child" + "(" + (order[i] + 1) + ")").find("img").css({
+                    filter : "blur(0px)",
+                    boxShadow : "none"
+                }, 0.01 // animation duration 0.01 seconds
+                );
+            } 
+            i++
+        }
+    }
+    )
+})
+    
+</script>
+
+<title>JuniorBreakers</title>
+</head>
+<body>
+
+    <div class="container-fluid" id = "main">
+
+        <!--Header-->
+        <header class="container-fluid" style="width: 95%;">
+        
+        <!-- Navigation bar-->
+        <nav class="navbar navbar-expand-xl navbar-dark">
+        <!--Logo-->
+            <a class="navbar-brand" href="#">
+                <img id="navbar_logo" src="../../images/logo.png" alt="JuniorBreakers logo" style="height: 165px;">
+            </a>
+            <!--3 Bar logo button for when the navigation bar collapses-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            
+            <!--Navigation Links-->
+            <ol class="navbar-nav">
+                <li class="nav-item">
+                    <a href="" class="nav-link" data-link="home" style="color: #51606e;"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link" data-link="membership" style="color: #51606e;"><b>Membership</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link" data-link="training programmes" style="color: #51606e;"><b>Training Programmes</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link" data-link="competitive games" style="color: #51606e;"><b>Competitive games</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link" data-link="social media" style="color: #51606e;"><b>Social Media</b></a>
+                </li>
+            </ol>
+        </div>
+        
+        </nav>
+        
+    </header>   
+        <section class = "row" id="training_banner" style="margin: 0 auto">
+            <div class="col-11" id="training_inner_div">
+                <div id="training_image">
+                    <h1 data-adobe-font="blockhead OT">
+                        Training progammes
+                    </h1>
+                </div>
+                    <p>
+                        Here at Juniorbreakers we offer a range of sports and activities to help support our community. Starting at Saturday drills and skills to an Academy course after school program lasting a first school term and finally to Camp which will focus on a 2 week intensive routine to help sharpen the skills of aspiring youths.
+                    </p>
+                </div>
+        </section>
+
+        <section class = "row" id = "training_programmes">
+            <div class = "row" id = "training_programmes_inner_div">
+                <div class="col-lg-8 col-md-12" id = "training_cards_container">
+                    <div class = "training_card">
+                        <img class = "fluid-img" src="../../images/drills_skills.png" alt="JuniorBreakers logo">
+                        <div>
+                            <h3 data-adobe-font="blockhead OT">
+                                Drills and skills
+                            </h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, autem ad? Quos explicabo dignissimos ea! Eius soluta a dolorum nisi dolore voluptate numquam ducimus, temporibus nobis. Natus eligendi sint itaque.</p>
+                        </div>
+                    </div>
+                    <div class = "training_card">
+                        <img class = "fluid-img" src="../../images/academy.png" alt="JuniorBreakers logo">
+                        <div>
+                            <h3 data-adobe-font="blockhead OT">
+                                Academy
+                            </h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, autem ad? Quos explicabo dignissimos ea! Eius soluta a dolorum nisi dolore voluptate numquam ducimus, temporibus nobis. Natus eligendi sint itaque.</p>
+                            </div>
+                    </div>
+                    <div class = "training_card">
+                        <img class = "fluid-img" src="../../images/basket_ball_camp.jpg" alt="JuniorBreakers logo">
+                        <div>
+                            <h3 data-adobe-font="blockhead OT">
+                                Camp
+                            </h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, autem ad? Quos explicabo dignissimos ea! Eius soluta a dolorum nisi dolore voluptate numquam ducimus, temporibus nobis. Natus eligendi sint itaque.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-12" id = "option_button_containers">
+                    <div>
+                        <h2 data-adobe-font="blockhead OT">
+                            What we offer
+                        </h2>
+                        <ol>
+                            <li data-num-id = "0">
+                                <a href="" >Saturday drills and skills</a>
+                            </li>
+                            <li data-num-id = "1">
+                                <a href="" >Academy</a>
+                            </li>
+                            <li data-num-id = "2">
+                                <a href="" >Camp</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class = "row" id = "footer">
+            <div class = "col-12">
+                <h1 data-adobe-font="blockhead OT">
+                    Membership
+                </h1>
+                <p>
+                    At Junior Breakers, our Membership subscription offers special discounts to programmes run by Our Organization from Saturday Drills and Skill session discounts to Academy discounts and Basketball Camp too. Another feature of the Membership is also free access to special an on site Gym on Sundays where people Training could also help train their muscles to keep an edge in basketball games. 
+                </p>
+                <a href="">
+                    <h3 id = "get_member_ship" data-adobe-font="blockhead OT">
+                        Get membership
+                    </h3>
+                </a>
+            </div>
+            <div class = "row">
+                <div class = "col-sm-12 col-md-4">
+                    <h3 data-adobe-font="blockhead OT">
+                        Contact Us
+                    </h3>
+                    <ul>
+                        <li>
+                            Phone: +6499705260
+                        </li>
+                        <li>
+                            Email: info@juniorbreakers.co.nz
+                        </li>
+                    </ul>
+                </div>
+                <div class = "col-sm-12 col-md-4">
+                    <div>
+                    <h3 data-adobe-font="blockhead OT">
+                        Find Us
+                    </h3>
+                    <ul>
+                        <li>
+                            7 Atlas Place, Mairangi Bay, North Shore City 0632
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class = "col-sm-12 col-md-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.987434870179!2d174.7305163158773!3d-36.74687268152088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d3a2b5dace937%3A0xdb683b32294cffc9!2sSky%20Sport%20Breakers%20NZ!5e0!3m2!1sen!2snz!4v1622295255104!5m2!1sen!2snz" style="border:0; height :250px; width: 250px;border-radius: 50%;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+    
+            <h1>
+                 <b>Love to hop</b>
+            </h1>
+        </footer>
+    </div>
+</body>

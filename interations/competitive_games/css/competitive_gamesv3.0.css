@@ -1,0 +1,244 @@
+/* Setting up the theme */
+body {
+    background-color: #F7FFFE;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #394855;    
+}
+
+h1 {
+    font-size: 7vw;
+}
+
+h3 {
+    font-size: 2.5vw;
+}
+/* Sections of the Website */
+
+/* Navigation bar */
+
+.navbar-nav {
+    font-size: 20px;
+}
+
+#main {
+    width: 95%;
+}
+
+/* Main about section */
+
+#competitve_games_banner{
+    margin-top: 50px;
+    background-color: #8BAFCE;
+    height: 846px;
+    width: 91%;
+    margin: 0 auto;
+}
+
+/* Main about section Banner */
+
+#competitive_games_inner_div{
+    padding-top: 75px;
+    margin: 0 auto;
+}
+
+/* Banner image */
+#competitive_games_image{
+    background: url(../../../images/competitive_banner.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    max-height: 438px;
+    padding: 0;
+    border: 0;
+}
+
+/* Banner header and text */
+#competitve_games_banner h1, #competitve_games_banner p {
+    color: white;
+}
+
+/* Banner image blur filter */
+#competitive_games_overlay {
+    backdrop-filter: blur(4px);
+    float: none; 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+/* Centering header */
+#competitive_games_overlay h1 {
+    text-align: center;
+    padding: 110px;
+}
+
+/* Centering blurb */
+#competitve_games_banner p {
+    max-width: 80%;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px auto 0;
+}
+
+/* game matches section */
+#game_matches {
+    /* Center section */
+    display: block;
+    margin: 0 auto;
+
+    width: 91%;
+    height: fit-content;
+    min-height: 500px;
+}
+
+/* Pesudo element that the inner container can push against when using margin */
+#game_matches::before{
+    width: 10px;
+    height: 10px;
+    content: "";
+    display: block;
+}
+
+/* Table heading */
+#matches_inner_container h2 {
+    font-size: 50px;
+    color: #8BAFCE;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+#matches_inner_container {
+    background-color: #DAEDFF;
+    margin: 100px auto;
+    padding: 0;
+}
+
+#matches_inner_container table {
+    height: 350px;
+}
+
+/* Overwriting bootstrap css for more clear outlines */
+.table-bordered th, .table-bordered tr, .table-bordered td, .table thead th {
+    border: 2px #707070 solid;
+}
+
+/* sign up section */
+#sign_up {
+    width: 91%;
+    margin: 0 auto;
+    background-color: #DAEDFF;
+    height: fit-content;
+    min-height: 250px;
+}
+
+/* Inner container */
+#sign_up div {
+    padding: 50px 0;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+/* Footer */
+#footer { /* Using an ID instead of tag selector method because of CSS specificity */
+    display: block;
+    margin: 0 auto;
+    background-color: #394855;
+    width: 91%;
+    height: fit-content;
+    text-align: center;
+}
+
+
+#footer h1 {
+    /* Centering H1 Headings*/
+    width: fit-content;
+    margin: 0 auto 25px;
+
+    /* Adding padding at the bottom for the 'love to hop' heading */
+    padding-bottom: 15px;
+}
+
+
+#footer div h1 {
+    color: #FEB0D7;
+
+    /* removing padding from the Membership heading in the footer section */
+    padding: 0;
+}
+
+#footer h1, #footer p {
+    color: white;
+}
+
+#footer p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#footer a {
+    /* Getting so it will only have width which covers how long the text is */
+    width: fit-content;
+
+    /* Centering button */
+    display: block;
+    margin: 0 auto;
+
+    /* Getting rid of underline */
+    text-decoration: none;
+}
+
+#get_member_ship {
+    margin-top: 25px;
+    /* Creating the shape of the buttons */
+    padding: 25px 60px;
+    border-radius: 25px;
+
+    /* Colors for the Button */
+    color: white !important; /* Since there is another css tag below telling h3 to be a different color I need to increase the priority for this css rule */
+    background-color: #FEB0D7;
+    box-shadow: 2px 2px #FF7EBF;
+}
+
+#get_member_ship:hover {
+
+    /* Change color when the mouse hovers over*/
+    color: #8BAFCE !important; /* Since there is another css tag below telling h3 to be a different color I need to increase the priority for this css rule */
+    background-color: #DAEDFF;
+    box-shadow: 2px 2px #8BAFCE; /* Give the button 3d shape*/
+}
+
+/* Inner div containers */
+#footer div {
+    /* Row inner containers inside the footer section have their margins and padding removed */
+    margin: 0;
+    padding: 0;
+}
+
+#footer div div{
+    /* Vertically aligning all divs inside the inner div containers inside the footer to be vertically centered*/
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+/* Sub headings for each column */
+#footer h3{
+    color: #8BAFCE;
+}
+
+/* Setting up contact information */
+#footer li, #footer ul {
+    /* Setting color text */
+    color: #DAEDFF;
+
+    /* Getting rid of the default browser settings for listed items and unordered list */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

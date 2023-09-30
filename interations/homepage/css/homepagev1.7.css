@@ -1,0 +1,13 @@
+/* Setting up the theme */
+body {
+    background-color: #F7FFFE;
+}
+
+/* Logo */
+#navbar_logo {
+    height: 165px;
+}
+
+.navbar nav {
+    font-size: 20px;
+}

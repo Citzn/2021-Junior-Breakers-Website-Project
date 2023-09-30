@@ -1,0 +1,63 @@
+/* Setting up the theme */
+body {
+    background-color: #F7FFFE;
+}
+
+h1 {
+    font-size: 125px;
+}
+/* Sections of the Website */
+
+/* Navigation bar */
+
+.navbar-nav {
+    font-size: 20px;
+}
+/* Logo */
+#navbar_logo {
+    height: 165px;
+}
+
+/* Hero section */
+
+#hero_section_image{
+    /* Image + Setting it up*/
+    background: url(../../../images/hero_image.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 700px;
+    margin: 0 auto;
+    width: 85%;
+    
+}
+
+#hero_image_overlay {
+    /* The blur fliter to blur the background */
+    backdrop-filter: blur(4px);
+
+    /* the lengths which the blur should cover */
+    height: 700px;
+
+    /* remove random padding */
+    padding: 0;
+
+    /* to stop the blur fliter from overflowing */
+    overflow: hidden;
+}
+
+#hero_overlay_text {
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    left: 21%;
+}
+
+#hero_overlay_text h1, #hero_overlay_text p {
+    text-align: center;
+    color: white;
+}
+
+#hero_image_overlay p {
+    font-size: 22px;
+}

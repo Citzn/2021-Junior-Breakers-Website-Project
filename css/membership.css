@@ -1,0 +1,282 @@
+
+/* Setting up the theme */
+body {
+    background-color: #F7FFFE;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #394855;    
+}
+
+h1 {
+    font-size: 7.5vw;
+}
+
+/* Sections of the Website */
+
+/* Navigation bar */
+
+.navbar-nav {
+    font-size: 20px;
+}
+
+.navbar-toggler {
+    background-color: #8BAFCE;
+}
+
+#main {
+    width: 95%;
+}
+
+/* Main about section */
+
+#membership_banner{
+    background-color: #8BAFCE;
+    max-height: 846px;
+    width: 91%;
+    margin: 0 auto;
+    padding-bottom: 5vw;
+}
+
+/* Main about section Banner */
+
+#membership_inner_div {
+    padding-top: 1vw;
+    margin: 0 auto;
+    padding-bottom: 5vw;
+}
+
+/* Banner image */
+#membership_image{
+    margin-top: 1.5vw;
+    background: url(../images/membership_banner.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 22.5vw;
+    max-height: 438px;
+    padding: 0;
+    border: 0;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/* Banner header and text */
+#membership_image h1, #membership_inner_div p {
+    text-align: center;
+    color: white;
+}
+
+/* Centering header */
+#membership_image h1 {
+    margin-top: -5%;
+}
+
+/* Centering blurb */
+#membership_inner_div p {
+    max-width: 80%;
+    font-size: 1.5vw;
+    margin: 50px auto 0;
+}
+
+#option_display {
+    background-color: #DAEDFF;
+    width: 91%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#option_inner_container {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.column_option {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: white;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: #DAEDFF 5px solid;
+}
+
+#option_inner_container div > div{
+    display: block;
+    padding: 5px;
+    margin-top: auto;
+}
+
+#option_inner_container ul {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+#option_inner_container ul {
+    font-size: 16px;
+}
+
+.column_option h3 {
+    color: #5AA0D3;
+}
+
+.membership_card_bottom {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 80%;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    margin: 0 2.5% !important;
+}
+
+.membership_card_bottom h3 {
+    display: inline-block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: bold;
+    margin-top: 4.5%;
+}
+
+.membership_card_bottom a {
+    display: block;
+    margin-left: 10%;
+
+    text-decoration: none;
+    font-size: 25px;
+
+    /* Creating the shape of the buttons */
+    padding: 7.5px 75px;
+    border-radius: 25px;
+    
+    /* Colors for the Button */
+    color: white;
+    background-color: #FEB0D7;
+    -webkit-box-shadow: 2px 2px #FF7EBF;
+            box-shadow: 2px 2px #FF7EBF;
+}
+
+
+.membership_card_bottom a:hover {
+    
+    color: #8BAFCE;
+    background-color: #DAEDFF;
+    -webkit-box-shadow: 2px 2px #8BAFCE;
+            box-shadow: 2px 2px #8BAFCE;
+}
+
+
+/* Footer */
+#footer { /* Using an ID instead of tag selector method because of CSS specificity */
+    display: block;
+    margin: 75px auto;
+    background-color: #394855;
+    width: 91%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 2.5vw;
+}
+
+
+#footer h1 {
+    /* Centering H1 Headings*/
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto 25px;
+
+    /* Adding padding at the bottom for the 'love to hop' heading */
+    padding-bottom: 15px;
+}
+
+
+#footer div h1 {
+    color: #FEB0D7;
+
+    /* removing padding from the Membership heading in the footer section */
+    padding: 0;
+}
+
+#footer h1, #footer p {
+    color: white;
+}
+
+#footer p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#footer a {
+    /* Getting so it will only have width which covers how long the text is */
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+
+    /* Centering button */
+    display: block;
+    margin: 0 auto;
+
+    /* Getting rid of underline */
+    text-decoration: none;
+}
+
+
+/* Inner div containers */
+#footer div {
+    /* Row inner containers inside the footer section have their margins and padding removed */
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.columns{
+    margin: 50px 0;
+    /* Vertically aligning all divs inside the inner div containers inside the footer to be vertically centered*/
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+/* Sub headings for each column */
+#footer h3{
+    color: #8BAFCE;
+    font-size: 35px;
+}
+
+/* Setting up contact information */
+#footer li, #footer ul {
+    /* Setting color text */
+    color: #DAEDFF;
+
+    /* Getting rid of the default browser settings for listed items and unordered list */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

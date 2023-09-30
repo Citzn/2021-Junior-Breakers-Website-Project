@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://use.typekit.net/tyi6brx.css">
+
+<link rel="stylesheet" href="css/homepagev12.0.css">
+<style>
+    [data-adobe-font="blockhead OT"] {
+        font-family: blockhead-black-face,
+        sans-serif; font-weight: 400;
+        font-style: normal;
+    }
+
+</style>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+    $("[data-link]").hover(
+    function() {
+        if ($(this).attr("data-link") == "home"){
+            $(this).html("<b>You are here</b>"); 
+    }
+        $(this).css({color : '#FEB0D7'});
+    },
+    function() {
+        $(this).html("<b>" + $(this).attr("data-link").charAt(0).toUpperCase() + $(this).attr("data-link").slice(1) + "</b>");
+        $(this).css({color : '#51606e'});
+    })
+})
+    
+</script>
+
+<title>JuniorBreakers</title>
+
+<link rel = "shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+<div class="container-fluid" id = "main">
+
+<!--Header-->
+<header class="container-fluid" style="width: 95%;">
+
+<!-- Navigation bar-->
+<nav class="navbar navbar-expand-md navbar-dark">
+<!--Logo-->
+<a class="navbar-brand" href="#">
+    <img id="navbar_logo" src="../../images/logo.png" alt="JuniorBreakers logo" style="height: 165px;">
+</a>
+<!--3 Bar logo button for when the navigation bar collapses-->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+<!--Navigation Links-->
+<ol class="navbar-nav">
+    <li class="nav-item">
+        <a href="" class="nav-link" data-link="home" style="color: #51606e;"><b>Home</b></a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link" data-link="membership" style="color: #51606e;"><b>Membership</b></a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link" data-link="training programmes" style="color: #51606e;"><b>Training Programmes</b></a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link" data-link="competitive games" style="color: #51606e;"><b>Competitive games</b></a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link" data-link="social media" style="color: #51606e;"><b>Social Media</b></a>
+    </li>
+</ol>
+
+</div>
+
+</nav>
+
+</header>  
+    <section class="row" style=" margin-bottom: 50px;">
+        <div id="hero_section_image">
+            <div id = "hero_overlay_text">
+                <h1 data-adobe-font="blockhead OT">JuniorBreakers</h1>
+                <p >Building a community of basket ballers</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="row" id="about_us_main">
+        <div class="col-11" id="about_us_banner">
+            <div id="about_us_image">
+                <h1 data-adobe-font="blockhead OT">
+                    About Us
+                </h1>
+            </div>
+
+            <p>
+                The Junior breakers are a Membership based Community centered around basket ball. Here Our aim is to help provide the Community with skills and camps to help inspire the next age of basketball players
+            </p>
+
+            <nav class="navbar navbar-expand navbar-dark content">
+                 <ol class="navbar-nav" id="about_us_jump_links">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">- Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">- Find us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about_social_media" class="nav-link">- Social media</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+        
+    <section class = "row" id="about_community">
+        <div class = "row justify-content-center align-middle" style="width: 95%; height: 85%; margin: auto;">
+            <div class="col-sm-12 col-md-5" id="community_text">
+                <h3 data-adobe-font="blockhead OT">
+                    Building a community
+                </h3>
+                <p>
+                    Here at Junior Breakers we also seek to build a strong online Community teaming with fellow passionate basketballers using our Social media as a platform for fellow basketballers to meet online. 
+                </p>
+                <div id = "media_links">
+                    <h4 data-adobe-font="blockhead OT">
+                        Social media
+                    </h4>
+                    <a href="#"><img src="../../images/instagram_logo.png" alt=""></a>
+
+                    <a href="#"><img src="../../images/twitter_logo.png" alt=""></a>
+
+                    <a href="https://www.facebook.com/juniorbreakersclub/"><img src="../../images/facebook_logo.png" alt=""></a>
+     
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5" id ="community_image">
+                <img class="img-fluid" src="../../images/social_media.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class = "row" id="about_competitve">
+        <div class = "row justify-content-center align-middle" id = "competitve_inner_container">
+            <div class="col-sm-12 col-md-5" id ="about_competitve_image">
+                <img class="img-fluid" src="../../images/competitive_image.png" alt="">
+            </div>
+            <div class="col-sm-12 col-md-5" id="about_competitve_text">
+                <h3 data-adobe-font="blockhead OT">
+                    Running Competitive games
+                </h3>
+                <p>
+                    At Junior Breakers we also support the growth of the Junior level competitive games between schools helping and seek to bring more audiences to these senses by organizing these Competitive games our selves
+                </p>
+                <a href="competitive_games.html" id = "find_out_competitive">
+                    <h5 data-adobe-font="blockhead OT">
+                        Finding out more
+                    </h5>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class = "row" id = "training_programs">
+        <h1 data-adobe-font="blockhead OT">
+            Training programmes
+        </h1>
+        <div class = "col-sm-12 col-md-4">
+            <img class = "img-fluid" src="../../images/drills_skills_circle_image.jpg" alt="">
+            <a href="">
+                <h4 data-adobe-font="blockhead OT">
+                    Saturday Drills and Skills
+                </h4>
+            </a>
+            <p>
+                During Saturdays, train along side by side with others your age with drills and skills
+            </p>
+        </div>
+        <div class = "col-sm-12 col-md-4">
+            <img class = "img-fluid" src="../../images/academy_circle_image.png" alt="">
+            <a href="">
+                <h4 data-adobe-font="blockhead OT">
+                    Academy
+                </h4>
+            </a>
+            <p>
+                After School programs centered on honing your skills professional with expert trainers
+            </p>
+        </div>
+        <div class = "col-sm-12 col-md-4">
+            <img class = "img-fluid" src="../../images/camp_circle_image.png" alt="">
+            <a href="">
+                <h4 data-adobe-font="blockhead OT">
+                    Camp
+                </h4>
+            </a>
+            <p>
+                Holiday camps centered around Holiday long camps focusing on intensive training
+            </p>
+        </div>
+        <a href="competitive_games.html">
+            <h3 data-adobe-font="blockhead OT">
+                Find out more
+            </h3>
+        </a>
+    </section>
+    
+    <footer class = "row" id = "footer">
+        <div class = "col-12">
+            <h1 data-adobe-font="blockhead OT">
+                Membership
+            </h1>
+            <p>
+                At Junior Breakers, our Membership subscription offers special discounts to programmes run by Our Organization from Saturday Drills and Skill session discounts to Academy discounts and Basketball Camp too. Another feature of the Membership is also free access to special an on site Gym on Sundays where people Training could also help train their muscles to keep an edge in basketball games. 
+            </p>
+            <a href="">
+                <h3 id = "get_member_ship" data-adobe-font="blockhead OT">
+                    Get membership
+                </h3>
+            </a>
+        </div>
+        <div class = "row">
+            <div class = "col-sm-12 col-md-4 columns">
+                <h3 data-adobe-font="blockhead OT">
+                    Contact Us
+                </h3>
+                <ul>
+                    <li>
+                        Phone: +6499705260
+                    </li>
+                    <li>
+                        Email: info@juniorbreakers.co.nz
+                    </li>
+                </ul>
+            </div>
+            <div class = "col-sm-12 col-md-4 columns">
+                <div>
+                <h3 data-adobe-font="blockhead OT">
+                    Find Us
+                </h3>
+                <ul>
+                    <li>
+                        7 Atlas Place, Mairangi Bay, North Shore City 0632
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class = "col-sm-12 col-md-4 columns">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.987434870179!2d174.7305163158773!3d-36.74687268152088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d3a2b5dace937%3A0xdb683b32294cffc9!2sSky%20Sport%20Breakers%20NZ!5e0!3m2!1sen!2snz!4v1622295255104!5m2!1sen!2snz" style="border:0; height :250px; width: 250px;border-radius: 50%;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <h1>
+             <b>Love to hop</b>
+        </h1>
+    </footer>
+</div>
+
+</body>

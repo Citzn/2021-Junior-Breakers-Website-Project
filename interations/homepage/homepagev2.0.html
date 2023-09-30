@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://use.typekit.net/tyi6brx.css">
+
+<link rel="stylesheet" href="css/homepagev2.0.css">
+<style>
+    [data-adobe-font="blockhead OT"] {
+        font-family: blockhead-black-face,
+        sans-serif; font-weight: 400;
+        font-style: normal;
+    }
+</style>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+    $("[data-link]").hover(
+    function() {
+        if ($(this).attr("data-link") == "home"){
+            $(this).html("<b>You are here</b>"); 
+    }
+        $(this).css({color : '#FEB0D7'});
+    },
+    function() {
+        $(this).html("<b>" + $(this).attr("data-link").charAt(0).toUpperCase() + $(this).attr("data-link").slice(1) +"</b>");
+        $(this).css({color : '#51606e'});
+    })
+})
+    
+</script>
+
+<title>JuniorBreakers</title>
+</head>
+<body>
+
+<div class="container-fluid" id = "main">
+
+<header class="container-fluid col-11" style="margin-top: 10px; margin-left: 90px; margin-right: auto; margin-bottom: 25px;">
+
+<nav class="navbar navbar-expand-md navbar-dark">
+
+<a class="navbar-brand" href="#">
+    <img id="navbar_logo" src="../../images/logo.png" alt="JuniorBreakers logo" style="height: 165px;">
+</a>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+    
+<ol class="navbar-nav">
+    <li class="nav-item">
+        <a href="" class="nav-link" data-link="home" style="color: #51606e;"><b>Home</b></a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link" data-link="membership" style="color: #51606e;"><b>Membership</b></a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link" data-link="training programmes" style="color: #51606e;"><b>Training Programmes</b></a>
+    </li>
+    <li class="nav-item">
+        <a href="" class="nav-link" data-link="social media" style="color: #51606e;"><b>Social Media</b></a>
+    </li>
+</ol>
+
+</div>
+
+</nav>
+
+</header>  
+
+<section class="row" style=" margin-bottom: 50px;">
+    <div id="hero_section_image">
+        <div id = "hero_overlay_text">
+            <h1 data-adobe-font="blockhead OT">JuniorBreakers</h1>
+            <p >Building a community of basket ballers</p>
+        </div>
+    </div>
+</section>
+
+</div>
+
+</body>
+ 

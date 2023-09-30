@@ -1,0 +1,502 @@
+
+/* Setting up the theme */
+body {
+    background-color: #F7FFFE;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #394855;    
+}
+
+h1 {
+    font-size: 7.5vw;
+}
+
+h3 {
+    font-size: 2.5vw;
+}
+/* Sections of the Website */
+
+/* Navigation bar */
+
+.navbar-nav {
+    font-size: 20px;
+}
+
+#main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Hero section */
+
+#hero_section_image{
+    /* Image + Setting it up*/
+    background: url(../../../images/hero_image.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 50vw;
+    max-height: 700px;
+    margin: 0 auto;
+    width: 89.5%;
+    
+}
+
+#hero_image_overlay {
+    /* The blur fliter to blur the background */
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+
+    /* the lengths which the blur should cover */
+    height: 100%;
+    max-height: 700px;
+
+    /* remove random padding */
+    padding: 0;
+
+    /* to stop the blur fliter from overflowing */
+    overflow: hidden;
+}
+
+#hero_overlay_text {
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    left: 21%;
+}
+
+#hero_overlay_text h1, #hero_overlay_text p {
+    text-align: center;
+    color: white;
+}
+
+#hero_image_overlay p {
+    font-size: 2vw;
+}
+
+
+/* Main about section */
+
+#about_us_main{
+    margin-top: 50px;
+    background-color: #8BAFCE;
+    height: 846px;
+    width: 91%;
+    float: none; 
+    margin: 0 auto;
+}
+
+/*Main about section Banner*/
+
+#about_us_main{
+    padding-top: 75px;
+}
+
+#about_us_image{
+    background: url(../../../images/about_us_banner.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    max-height: 438px;
+    padding: 0;
+    border: 0;
+}
+
+#about_us_main h1, #about_us_main p {
+    color: white;
+}
+
+#about_us_banner {
+    margin: 0 auto;
+}
+
+#about_us_overlay{
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    float: none; 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+#about_us_overlay h1 {
+    text-align: center;
+    vertical-align: middle;
+    padding: 110px;
+}
+
+#about_us_main p {
+    max-width: 80%;
+    font-size: 30px;
+    text-align: center;
+    float: none; 
+    margin: 50px auto 0;
+}
+
+#about_us_jump_links {
+    margin: 0px auto;
+}
+
+#about_us_jump_links a{
+    margin: 0 15px 0 15px;
+    font-size: 25px;
+}
+
+/* About community section*/
+
+#about_community {
+    background-color: #DAEDFF;
+    /* Boundries of the entire section */
+    height: 626px;
+    width: 91%;
+    /*Centering entire competitve games section*/
+    margin: 0 auto;
+}
+
+#community_text {
+    color: #394855;
+    height: auto;
+    margin: auto;
+    height: -moz-auto;
+    margin: -moz-auto;
+    height: -webkit-auto;
+    margin: -webkit-auto;
+    height: -o-auto;
+    margin: -o-auto;
+}
+
+#about_social_media {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#community_image {
+    margin: auto;
+}
+
+#media_links {
+    margin: 0 auto;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: -o-fit-content;
+}
+
+#media_links h4{
+    margin: 0 auto 15px;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: -o-fit-content;
+}
+
+#media_links a{
+    margin: 0 1vw;
+}
+
+#media_links img {
+    width: 50px;
+    height: 50px;
+}
+
+#media_links a:hover{
+    -webkit-filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.75));
+            filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.75));
+}
+
+/*About competitve games entire section*/
+#about_competitve{
+    /* Boundries of the entire section */
+    height: 626px;
+    width: 91%;
+    /*Centering entire competitve games section*/
+    margin: 0 auto;
+
+    background-color: #DAEDFF;
+}
+
+/* inner container, serving both as container and background color*/
+#competitve_inner_container{
+    /* inner container boundries */
+    width: 95%;
+    height: 85%;
+
+    /* centering entire container */
+    margin: auto;
+
+    background-color: white;
+}
+
+/* competitive games image + div containing information about competitive games */
+#about_competitve_image, #about_competitve_text {
+    /* centering both */
+    margin: auto;
+}
+
+/* 'Find out more' button */
+#find_out_competitive{
+    /* Centering 'Find out more' button */
+    display: block;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: -o-fit-content;
+    margin: 0 auto;
+
+    /* Getting rid of anchor tag underline */
+    text-decoration: none;
+}
+
+#find_out_competitive h5{
+    /* Making shape of the button */
+    padding: 15px 25px;
+    border-radius: 25px;
+
+    /* Colors for the Button */
+    color: white;
+    background-color: #FEB0D7;
+    -webkit-box-shadow: 2px 2px #FF7EBF;
+            box-shadow: 2px 2px #FF7EBF; /* Give the button 3d shape*/
+}
+
+/* When mouse hovers over the button */
+#find_out_competitive h5:hover{
+    color: #8BAFCE;
+    background-color: #DAEDFF;
+    -webkit-box-shadow: 2px 2px #8BAFCE;
+            box-shadow: 2px 2px #8BAFCE;
+}
+
+
+
+/* Training program section */
+
+/* Entire training program section */
+#training_programs {
+    /*Centering entire programing section container*/
+    margin: 150px auto 0;
+    /*Setting entire section width*/
+    width: 91%;
+
+    height: 1000px;
+}
+
+/* Over arching heading */
+#training_programs h1{
+    width: fit-content;
+    height: fit-content;
+    width: fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    height: -moz-fit-content;
+    width: -webkit-fit-content;
+    height: -webkit-fit-content;
+    width: -o-fit-content;
+    height: -o-fit-content;
+    margin: 0 auto;
+    color: #51606e;
+}
+
+/* Columns */
+#training_programs div{
+    margin-top: 50px;
+    padding: 0;
+    text-align: center;
+}
+
+/* images in each column */
+#training_programs img {
+    /* Centering images to the middle */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Each Anchor tag in the training program section */
+#training_programs a {
+    /* Getting so it will only have width which covers how long the text is */
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: -o-fit-content;
+
+    /* Centering button */
+    display: block;
+    margin: 0 auto;
+
+    /* Getting rid of underline */
+    text-decoration: none;
+}
+
+#training_programs h4 {
+    font-size: 35px;
+    margin: 50px 0 25px;
+
+    /* Creating the shape of the buttons */
+    padding: 15px 25px;
+    border-radius: 25px;
+
+    /* Colors for the Button */
+    color: #8BAFCE;
+    background-color: #DAEDFF;
+    -webkit-box-shadow: 2px 2px #8BAFCE;
+            box-shadow: 2px 2px #8BAFCE;
+}
+
+#training_programs h4:hover {
+    /* Change color when the mouse hovers over*/
+
+    color: white;
+    background-color: #FEB0D7;
+    -webkit-box-shadow: 2px 2px #FF7EBF;
+            box-shadow: 2px 2px #FF7EBF; /* Give the button 3d shape*/
+}
+
+#training_programs p {
+    font-size: 17px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+#training_programs h3 {
+    margin-top: 15px;
+    /* Creating the shape of the buttons */
+    padding: 25px 60px;
+    border-radius: 25px;
+
+    /* Colors for the Button */
+    color: white;
+    background-color: #FEB0D7;
+    -webkit-box-shadow: 2px 2px #FF7EBF;
+            box-shadow: 2px 2px #FF7EBF;
+}
+
+#training_programs h3:hover {
+
+    /* Change color when the mouse hovers over*/
+    color: #8BAFCE;
+    background-color: #DAEDFF;
+    -webkit-box-shadow: 2px 2px #8BAFCE;
+            box-shadow: 2px 2px #8BAFCE; /* Give the button 3d shape*/
+}
+
+
+
+/* Footer */
+#footer { /* Using an ID instead of tag selector method because of CSS specificity */
+    display: block;
+    margin: 75px auto;
+    background-color: #394855;
+    width: 91%;
+    height: fit-content;
+    height: -moz-fit-content;
+    height: -webkit-fit-content;
+    height: -o-fit-content;
+    text-align: center;
+}
+
+
+#footer h1 {
+    /* Centering H1 Headings*/
+    width: fit-content;    
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: -o-fit-content;
+    margin: 0 auto 25px;
+
+    /* Adding padding at the bottom for the 'love to hop' heading */
+    padding-bottom: 15px;
+}
+
+
+#footer div h1 {
+    color: #FEB0D7;
+
+    /* removing padding from the Membership heading in the footer section */
+    padding: 0;
+}
+
+#footer h1, #footer p {
+    color: white;
+}
+
+#footer p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#footer a {
+    /* Getting so it will only have width which covers how long the text is */
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+
+    /* Centering button */
+    display: block;
+    margin: 0 auto;
+
+    /* Getting rid of underline */
+    text-decoration: none;
+}
+
+#get_member_ship {
+    margin-top: 25px;
+    /* Creating the shape of the buttons */
+    padding: 25px 60px;
+    border-radius: 25px;
+
+    /* Colors for the Button */
+    color: white !important; /* Since there is another css tag below telling h3 to be a different color I need to increase the priority for this css rule */
+    background-color: #FEB0D7;
+    -webkit-box-shadow: 2px 2px #FF7EBF;
+            box-shadow: 2px 2px #FF7EBF;
+}
+
+#get_member_ship:hover {
+
+    /* Change color when the mouse hovers over*/
+    color: #8BAFCE !important; /* Since there is another css tag below telling h3 to be a different color I need to increase the priority for this css rule */
+    background-color: #DAEDFF;
+    -webkit-box-shadow: 2px 2px #8BAFCE;
+            box-shadow: 2px 2px #8BAFCE; /* Give the button 3d shape*/
+}
+
+/* Inner div containers */
+#footer div {
+    /* Row inner containers inside the footer section have their margins and padding removed */
+    margin: 0;
+    padding: 0;
+}
+
+#footer div div{
+    /* Vertically aligning all divs inside the inner div containers inside the footer to be vertically centered*/
+    width: fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    height: -moz-fit-content;
+    width: -webkit-fit-content;
+    height: -webkit-fit-content;
+    width: -o-fit-content;
+    height: -o-fit-content;
+    margin: auto;
+}
+
+/* Sub headings for each column */
+#footer h3{
+    color: #8BAFCE;
+}
+
+/* Setting up contact information */
+#footer li, #footer ul {
+    /* Setting color text */
+    color: #DAEDFF;
+
+    /* Getting rid of the default browser settings for listed items and unordered list */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
